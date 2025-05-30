@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Micro-tic</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="text-white font-sans">
+
+        <div class="w-[360px] mx-auto bg-blue-800 p-4 rounded-lg shadow-lg">
+            <div
+                class="max-w-sm mx-auto mt-6 overflow-hidden rounded-xl shadow-lg relative">
+                <div class="relative w-full h-40">
+
+                    <div class="slide hidden w-full h-full object-cover">
+                        <video class="w-full h-full object-cover" autoplay muted
+                            loop>
+                            <source
+                                src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div
+                        class="slide hidden w-full h-full object-cover flex items-center justify-center bg-blue-100">
+                        <p class="text-xl font-semibold text-blue-800">Texte
+                            Publicitaire ici</p>
+                    </div>
+                </div>
+
+                <button id="prevSlide"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2  px-2 py-1 text-gray-700 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                    </svg>
+                </button>
+
+                <button id="nextSlide"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2  px-2 py-1 text-gray-700 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+
+            </div>
+            <!-- <h1 class="text-3xl font-bold text-center mb-2">MIKROTIK</h1> -->
+            <p class="text-center text-sm mb-4 pt-4">Surfez
+                avec du haut débit ! Numéro: +229 0190000000 </p>
+            <div class="w-full flex justify-center px-2 sm:px-4">
+                <div
+                    class="text-gray-800 w-full max-w-md p-3 sm:p-4 rounded-lg">
+
+                    <div class="w-full mb-3"> <!-- Espace ajouté ici -->
+                        <input type="text" placeholder="Username"
+                            class="w-full p-2 sm:p-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
+                    </div>
+
+                    <div class="relative w-full">
+                        <input type="password" placeholder="Password"
+                            class="w-full p-3 pr-[6.5rem] text-base border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
+                        <button
+                            class="sm:absolute right-0 top-0 bottom-0 bg-red-500 text-white px-4 text-sm rounded-lg sm:rounded-l-none hover:bg-red-600 font-semibold border-l-0 py-4 mt-2 sm:py-0 sm:mt-0 ">
+                            Connexion
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+                <div
+                class="text-gray-800 pt-4 sm:pt-6 w-full max-w-md mx-auto mb-3 sm:mb-4">
+                <div
+                    class="flex flex-col sm:flex-row justify-around items-center gap-4 py-6 sm:py-8">
+
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                            </svg>
+                        </div>
+                        <p class="text-xs text-white">Annonces</p>
+                    </div>
+
+                    <a href="tarifs2.html">
+                        <div class="text-center cursor-pointer">
+                            <div
+                                class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+                                </svg>
+                            </div>
+                            <p class="text-xs text-white">Tarifs</p>
+                        </div>
+                    </a>
+                  <a href="boutique.html">
+                    <div class="text-center">
+                        <div
+                            class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                            </svg>
+                        </div>
+                        <p class="text-xs text-white">Boutiques</p>
+                    </div>
+                </a>
+
+                </div>
+                 <div class="mt-4">
+                <img src="https://img.icons8.com/ios/100/ffffff/wifi.png"
+                    class="mx-auto w-12" />
+                <p class="text-center mt-2 text-white">ZONE ICI</p>
+
+            </div>
+
+            <div class="flex justify-around mt-6 text-sm font-bold text-white">
+                <button>Appel</button>
+                <button>A Propos</button>
+                <button>Message</button>
+            </div>
+        </div>
+            </div>
+            </div>
+
+           
+
+        <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            let index = 0;
+            const slides = document.querySelectorAll('.slide');
+            const total = slides.length;
+            const showSlide = (i) => {
+                slides.forEach((slide, j) => slide.classList.toggle('hidden', j !== i));
+            };
+            showSlide(index);
+
+            document.getElementById('prevSlide').addEventListener('click', () => {
+                index = (index - 1 + total) % total;
+                showSlide(index);
+            });
+            document.getElementById('nextSlide').addEventListener('click', () => {
+                index = (index + 1) % total;
+                showSlide(index);
+            });
+        });
+    </script>
+    </body>
+
+</html>
