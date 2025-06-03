@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Micro-tic</title>
         <script src="https://cdn.tailwindcss.com"></script>
+
     </head>
 
-    <body class="text-white font-sans">
+    <body class="font-sans flex items-center justify-center ">
+        <div
+            class="bg-blue-800 p-4 rounded-lg min-h-screen w-full max-w-xl mx-auto">
 
-        <div class="w-[360px] mx-auto bg-blue-800 p-4 rounded-lg shadow-lg">
             <div
                 class="max-w-sm mx-auto mt-6 overflow-hidden rounded-xl shadow-lg relative">
                 <div class="relative w-full h-40">
@@ -19,7 +21,7 @@
                         <video class="w-full h-full object-cover" autoplay muted
                             loop>
                             <source
-                                src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                                src="https://www.w3schools.com/html/mov_bbb.mp4"
                                 type="video/mp4">
                         </video>
                     </div>
@@ -54,121 +56,168 @@
 
             </div>
             <!-- <h1 class="text-3xl font-bold text-center mb-2">MIKROTIK</h1> -->
-            <p class="text-center text-sm mb-4 pt-4">Surfez
-                avec du haut débit ! Numéro: +229 0190000000 </p>
+            <p class="text-center text-sm mb-4 pt-4 text-white">
+                Surfez avec du haut débit ! Numéro: +229 0190000000
+            </p>
+
             <div class="w-full flex justify-center px-2 sm:px-4">
                 <div
                     class="text-gray-800 w-full max-w-md p-3 sm:p-4 rounded-lg">
 
-                    <div class="w-full mb-3"> <!-- Espace ajouté ici -->
+                    <div class="w-full mb-3">
                         <input type="text" placeholder="Username"
                             class="w-full p-2 sm:p-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
                     </div>
 
                     <div class="relative w-full">
+
                         <input type="password" placeholder="Password"
                             class="w-full p-3 pr-[6.5rem] text-base border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
-                        <button
-                            class="sm:absolute right-0 top-0 bottom-0 bg-red-500 text-white px-4 text-sm rounded-lg sm:rounded-l-none hover:bg-red-600 font-semibold border-l-0 py-4 mt-2 sm:py-0 sm:mt-0 ">
+
+                        <a href="client.html"
+                            class="absolute right-0 top-0 bottom-0 bg-red-500 text-white px-4 text-sm rounded-r-lg hover:bg-red-600 font-semibold flex items-center justify-center h-full">
                             Connexion
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
-                    <a href="annonce.html">
 
+            <a href="annonce.html">
                 <div
-                class="text-gray-800 pt-4 sm:pt-6 w-full max-w-md mx-auto mb-3 sm:mb-4">
-                <div
-                    class="flex flex-col sm:flex-row justify-around items-center gap-4 py-6 sm:py-8">
-
-                    <div class="text-center">
-                        <div
-                            class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-                            </svg>
-                        </div>
-                        <p class="text-xs text-white">Annonces</p>
-                    </div>
-
-                    <a href="tarifs2.html">
-                        <div class="text-center cursor-pointer">
+                    class="text-gray-800 pt-4 sm:pt-6 w-full max-w-md mx-auto mb-3 sm:mb-4">
+                    <div
+                        class="flex flex-wrap justify-around items-center gap-4 py-6 sm:py-8">
+                        <div class="text-center group cursor-pointer">
                             <div
-                                class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
-                                    <path stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                                </svg>
+                                class="transform transition-all duration-300 hover:scale-110">
+                                <div
+                                    class="bg-blue-100 group-hover:bg-blue-200 group-hover:shadow-lg p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 group-hover:text-blue-700 transition-colors duration-300">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-xs text-white group-hover:text-blue-200 transition-colors duration-300">Annonces</p>
                             </div>
-                            <p class="text-xs text-white">Tarifs</p>
                         </div>
-                    </a>
-                  <a href="boutique.html">
-                    <div class="text-center">
-                        <div
-                            class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
-                            </svg>
-                        </div>
-                        <p class="text-xs text-white">Boutiques</p>
-                    </div>
-                </a>
-                 <a href="A propos.html">
-                    <div class="text-center">
-                        <div
-                            class="bg-blue-100 p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600">
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
-                            </svg>
-                        </div>
-                        <p class="text-xs text-white">A propos</p>
-                    </div>
-                </a>
 
+                        <a href="tarifs2.html" class="text-center group">
+                            <div
+                                class="transform transition-all duration-300 hover:scale-110">
+                                <div
+                                    class="bg-blue-100 group-hover:bg-blue-200 group-hover:shadow-lg p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 group-hover:text-blue-700 transition-colors duration-300">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-xs text-white group-hover:text-blue-200 transition-colors duration-300">Tarifs</p>
+                            </div>
+                        </a>
+
+                        <a href="boutique.html" class="text-center group">
+                            <div
+                                class="transform transition-all duration-300 hover:scale-110">
+                                <div
+                                    class="bg-blue-100 group-hover:bg-blue-200 group-hover:shadow-lg p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 group-hover:text-blue-700 transition-colors duration-300">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-xs text-white group-hover:text-blue-200 transition-colors duration-300">Boutiques</p>
+                            </div>
+                        </a>
+
+                        <a href="A propos.html" class="text-center group">
+                            <div
+                                class="transform transition-all duration-300 hover:scale-110">
+                                <div
+                                    class="bg-blue-100 group-hover:bg-blue-200 group-hover:shadow-lg p-2 sm:p-3 rounded-lg mb-2 mx-auto w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 group-hover:text-blue-700 transition-colors duration-300">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-xs text-white group-hover:text-blue-200 transition-colors duration-300">A
+                                    propos</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mt-8 mb-6">
+                        <div
+                            class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-white/20 rounded-2xl p-6 mx-4">
+                            <div class="flex flex-col items-center space-y-3">
+                                <div class="relative">
+                                    <div
+                                        class="absolute inset-0 bg-blue-400 rounded-full blur-md opacity-50 animate-pulse"></div>
+                                    <div
+                                        class="relative bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/30">
+                                        <img
+                                            src="https://img.icons8.com/ios/100/ffffff/wifi.png"
+                                            class="w-8 h-8" />
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p
+                                        class="text-white font-semibold text-lg tracking-wide">ZONE
+                                        ICI</p>
+                                    <div
+                                        class="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mt-2 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 pb-4">
+                        <div class="flex gap-3 ">
+                            <a href="tel:+2290190667489" class="flex-1  ">
+                                <button
+                                    class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    </svg>
+                                    <span>Appeler</span>
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
-                 <div class="mt-4">
-                <img src="https://img.icons8.com/ios/100/ffffff/wifi.png"
-                    class="mx-auto w-12" />
-                <p class="text-center mt-2 text-white">ZONE ICI</p>
+            </a>
 
-            </div>
-
-            <div class="flex justify-around mt-6 text-sm font-bold text-white">
-                <button>Appel</button>
-                <button>A Propos</button>
-                <button>Message</button>
-            </div>
-        </div>
-                    </a>
-            </div>
-            </div>
-
-           
-
-        <script defer>
+            <script defer>
         document.addEventListener('DOMContentLoaded', () => {
             let index = 0;
             const slides = document.querySelectorAll('.slide');
@@ -188,6 +237,6 @@
             });
         });
     </script>
-    </body>
+        </body>
 
-</html>
+    </html>
