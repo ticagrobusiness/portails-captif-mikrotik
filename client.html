@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Micro-tic</title>
         <script src="https://cdn.tailwindcss.com"></script>
-
     </head>
 
-    <body class="font-sans flex items-center justify-center ">
+    <body class="font-sans flex items-center justify-center px-2">
         <div
             class="bg-[#1e4969] p-4 rounded-lg min-h-screen w-full max-w-xl mx-auto">
 
-            <div class="flex items-center justify-between mb-8">
+            <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 space-y-4 sm:space-y-0">
                 <a href="./connexion.html"
                     class="group flex items-center text-white hover:text-blue-200 transition-all duration-300">
                     <div
@@ -23,7 +23,8 @@
                             fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="M15 19l-7-7 7-7" />
+                                stroke-width="2"
+                                d="M15 19l-7-7 7-7" />
                         </svg>
                     </div>
                     <span class="font-semibold">Retour</span>
@@ -31,7 +32,8 @@
 
                 <div
                     class="bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full">
-                    <h1 class="text-xl font-bold text-white">Client</h1>
+                    <h1
+                        class="text-xl font-bold text-white text-center">Client</h1>
                 </div>
             </div>
 
@@ -50,11 +52,11 @@
                               0-4.512-.645-6.374-1.766Z" />
                         </svg>
                     </div>
-                   
                 </div>
             </div>
 
             <div class="space-y-4 mb-8">
+                <!-- Adresse IP -->
                 <div
                     class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 hover:bg-white/15 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center space-x-4">
@@ -80,6 +82,7 @@
                     </div>
                 </div>
 
+                <!-- MAC -->
                 <div
                     class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 hover:bg-white/15 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center space-x-4">
@@ -103,6 +106,7 @@
                     </div>
                 </div>
 
+                <!-- Durée connexion -->
                 <div
                     class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 hover:bg-white/15 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center space-x-4">
@@ -128,15 +132,14 @@
                             <div
                                 class="w-1 h-6 bg-orange-400 rounded-full animate-pulse"></div>
                             <div
-                                class="w-1 h-6 bg-orange-400 rounded-full animate-pulse"
-                                style="animation-delay: 0.2s"></div>
+                                class="w-1 h-6 bg-orange-400 rounded-full animate-pulse delay-200"></div>
                             <div
-                                class="w-1 h-6 bg-orange-400 rounded-full animate-pulse"
-                                style="animation-delay: 0.4s"></div>
+                                class="w-1 h-6 bg-orange-400 rounded-full animate-pulse delay-400"></div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Temps restant -->
                 <div
                     class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 hover:bg-white/15 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center space-x-4">
@@ -157,21 +160,23 @@
                                 35m 31s</p>
                             <p class="text-blue-200 text-sm">Temps restant</p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
 
-            <!-- Section déconnexion -->
+            <!-- Déconnexion -->
             <div
                 class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 hover:bg-white/15 transition-all duration-300">
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center space-x-3">
+                <div
+                    class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+
+                    <!-- Partie gauche : Icône + Texte -->
+                    <div class="flex items-center space-x-4">
                         <div
-                            class="p-2 bg-red-500/20 backdrop-blur-sm rounded-lg border border-red-400/30">
+                            class="p-3 bg-red-500/20 backdrop-blur-sm rounded-lg border border-red-400/30">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
                                 class="w-5 h-5 text-red-300">
                                 <path stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -186,11 +191,12 @@
                         </div>
                     </div>
 
+                    <!-- Bouton -->
                     <button
-                        class="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white px-6 py-3 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 active:scale-95 group">
+                        class="w-full sm:w-auto bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white px-6 py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 active:scale-95 group">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor"
                             class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
@@ -200,7 +206,6 @@
                 </div>
             </div>
 
-            
         </div>
     </body>
 
